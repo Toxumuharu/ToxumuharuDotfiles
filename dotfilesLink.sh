@@ -3,10 +3,13 @@
 case "${OSTYPE}" in
 	darwin*)
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install vim -y
+	brew install ack -y	
 	;;
 	linux*)
-	sudo apt install -y curl
-	sudo apt install -y vim
+	sudo apt install curl -y
+	sudo apt install vim -y
+	sudo apt install ack-grep -y
 	;;
 esac
 
