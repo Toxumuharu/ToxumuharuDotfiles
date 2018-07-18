@@ -5,6 +5,7 @@ case "${OSTYPE}" in
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew install vim -y
 	brew install ack -y	
+	export PATH="/usr/local/bin:$PATH"	
 	;;
 	linux*)
 	sudo apt install curl -y
