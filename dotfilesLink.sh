@@ -12,8 +12,10 @@ brew install ack -y
 linux*)
 #sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
-sudo apt install neofetch -y
+#sudo apt install neofetch -y
 cat ./toxumuharu.txt
+echo ""
+echo "Installing packages"
 sudo apt install curl -y
 sudo apt install vim -y
 sudo apt install ack-grep -y
@@ -35,3 +37,5 @@ esac
 ln -sf ~/ToxumuharuDotfiles/.vimrc ~/.vimrc
 ln -sf ~/ToxumuharuDotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/ToxumuharuDotfiles/.bashrc ~/.bashrc
+echo "Linked dotfiles"
+echo "Finishing..."
