@@ -10,7 +10,7 @@ cat ./toxumuharu.txt
 brew install ack -y
 ;;
 linux*)
-sudo add-apt-repository ppa:dawidd0811/neofetch -y
+#sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
 sudo apt install neofetch -y
 cat ./toxumuharu.txt
@@ -21,10 +21,10 @@ string="Microsoft"
 if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
 then
 echo "WSL detected"
-neofetch
+#neofetch
 else
 echo "Linux detected"
-neofetch
+#neofetch
 sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
