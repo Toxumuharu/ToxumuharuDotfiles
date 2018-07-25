@@ -30,6 +30,7 @@ echo "Linux detected"
 sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
+sudo apt install xdg-utils -y
 fi
 ;;
 esac
