@@ -143,7 +143,7 @@ alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -la --color'
 string="Microsoft"
-if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
+if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
 then
 alias n=notepad++.exe
 alias vs=devenv.exe

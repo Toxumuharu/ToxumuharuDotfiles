@@ -21,6 +21,7 @@ sudo apt install vim -y
 sudo apt install ack-grep -y
 string="Microsoft"
 if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
+#if [ $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string ]
 then
 echo "WSL detected"
 #neofetch
