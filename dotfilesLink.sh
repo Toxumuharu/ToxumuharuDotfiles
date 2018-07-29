@@ -10,7 +10,7 @@ cat ./toxumuharu.txt
 brew install ack -y
 ;;
 linux*)
-#sudo add-apt-repository ppa:dawidd0811/neofetch -y
+sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
 #sudo apt install neofetch -y
 cat ./toxumuharu.txt
@@ -32,6 +32,7 @@ sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
 sudo apt install xdg-utils -y
+sudo apt install sl -y
 fi
 ;;
 esac
