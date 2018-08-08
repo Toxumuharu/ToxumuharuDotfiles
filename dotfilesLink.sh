@@ -28,6 +28,7 @@ echo "WSL detected"
 else
 echo "Linux detected"
 #neofetch
+sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
