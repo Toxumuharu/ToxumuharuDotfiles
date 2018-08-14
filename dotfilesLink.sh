@@ -2,9 +2,9 @@
 
 case "${OSTYPE}" in
 darwin*)
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
 brew install vim -y
-brew install git -y
+#brew install git -y
 export PATH="/usr/local/bin:$PATH"
 cat ./toxumuharu.txt
 brew install ack -y
