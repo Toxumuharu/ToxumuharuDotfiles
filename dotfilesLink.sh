@@ -10,6 +10,7 @@ cat ./toxumuharu.txt
 brew install ack -y
 ;;
 linux*)
+killall update-manager
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
 #sudo apt install neofetch -y
