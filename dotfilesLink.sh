@@ -2,14 +2,15 @@
 
 case "${OSTYPE}" in
 darwin*)
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
 brew install vim -y
-brew install git -y
+#brew install git -y
 export PATH="/usr/local/bin:$PATH"
 cat ./toxumuharu.txt
 brew install ack -y
 ;;
 linux*)
+killall update-manager
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
 #sudo apt install neofetch -y
@@ -28,6 +29,7 @@ echo "WSL detected"
 else
 echo "Linux detected"
 #neofetch
+sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
