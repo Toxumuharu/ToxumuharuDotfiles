@@ -2,7 +2,8 @@
 
 case "${OSTYPE}" in
 darwin*)
-echo -e "\e[36mmacOS detected"
+echo $'\e[31mmacOS detected\e[0m'
+#echo "macOS detected"
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
 brew install vim
 brew install git
@@ -26,10 +27,10 @@ string="Microsoft"
 if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
 #if [ $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string ]
 then
-echo -e "\e[36WSL detected"
+echo $'\e[31mWSL detected\e[0m'
 #echo "WSL detected"
 else
-echo -e "\e[36mLinux detected"
+echo $'\e[31mLinux detected\e[0m'
 #echo "Linux detected"
 sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
