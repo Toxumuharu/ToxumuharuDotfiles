@@ -2,12 +2,13 @@
 
 case "${OSTYPE}" in
 darwin*)
+echo -e "\e[36mmacOS detected"
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
 brew install vim
 brew install git
 brew install neofetch
+brew install figlet
 export PATH="/usr/local/bin:$PATH"
-cat ./toxumuharu.txt
 brew install ack
 ;;
 linux*)
@@ -15,7 +16,7 @@ killall update-manager
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
 sudo apt update -y
 sudo apt install neofetch -y
-cat ./toxumuharu.txt
+sudo apt install figlet -y
 echo ""
 echo "Installing packages"
 sudo apt install curl -y
@@ -25,10 +26,11 @@ string="Microsoft"
 if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
 #if [ $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string ]
 then
-echo "WSL detected"
+echo -e "\e[36WSL detected"
+#echo "WSL detected"
 else
-echo "Linux detected"
-#neofetch
+echo -e "\e[36mLinux detected"
+#echo "Linux detected"
 sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
@@ -45,3 +47,6 @@ ln -sf ~/ToxumuharuDotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/ToxumuharuDotfiles/.bashrc ~/.bashrc
 echo "Linked dotfiles"
 echo "Finishing..."
+echo ""
+figlet Welcome,
+figlet Toxumuharu
