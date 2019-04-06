@@ -1,10 +1,8 @@
 #!/bin/bash
-
 case "${OSTYPE}" in
 darwin*)
 echo $'\e[31mmacOS detected\e[0m'
 #echo "macOS detected"
-#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" -y
 brew install vim
 brew install git
 brew install neofetch
