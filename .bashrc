@@ -137,6 +137,7 @@ alias facetime="open -a /Applications/FaceTime.app"
 alias numbers="open -a /Applications/Numbers.app"
 alias pages="open -a /Applications/Pages.app"
 alias keynote="open -a /Applications/Keynote.app"
+/usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Homebrew\""
 		;;
 	linux*)
 alias ls='ls --color'

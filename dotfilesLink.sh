@@ -7,8 +7,8 @@ brew install vim
 brew install git
 brew install neofetch
 brew install figlet
-export PATH="/usr/local/bin:$PATH"
 brew install ack
+export PATH="/usr/local/bin:$PATH"
 ;;
 linux*)
 killall update-manager
@@ -35,7 +35,6 @@ sudo apt install build-essential devscripts -y
 sudo apt install chromium-browser -y
 sudo apt install byobu -y
 sudo apt install xdg-utils -y
-sudo apt install sl -y
 fi
 ;;
 esac
