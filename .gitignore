@@ -9,3 +9,4 @@
 .templ*
 .bash_history
 .wget*
+install.sh

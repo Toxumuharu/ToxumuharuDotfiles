@@ -6,12 +6,10 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set number
 set cursorline
-syntax on
+set clipboard+=unnamed
+
 colo default
-
-
-
-
+syntax on
 
 
 
