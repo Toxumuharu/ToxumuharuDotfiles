@@ -30,9 +30,6 @@ echo "Installing packages"
 sudo apt install curl -y
 sudo apt install vim -y
 sudo apt install ack-grep -y
-sudo apt install clang-3.5 -y
-sudo apt-get clang-format-3.5 -y
-sudo apt install lua5.3 -y
 
 #OS type == Windows Subsystem for Linux(WSL)
 string="Microsoft"
