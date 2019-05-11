@@ -22,6 +22,7 @@ export PATH="/usr/local/bin:$PATH"
 linux*)
 killall update-manager
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
+sudo add-apt-repository 'deb http://ftp.au.debian.org/debian/ stretch main non-free'
 sudo apt update -y
 sudo apt install neofetch -y
 sudo apt install figlet -y
@@ -43,9 +44,11 @@ echo $'\e[31mLinux detected\e[0m'
 #echo "Linux detected"
 sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
-sudo apt install chromium-browser -y
-sudo apt install byobu -y
+sudo apt install chromium -y 
+sudo apt-get install firmware-iwlwifi
 sudo apt install xdg-utils -y
+sudo apt install nautilus-dropbox -y
+sudo apt-get install firmware-iwlwifi -y
 fi
 ;;
 esac
