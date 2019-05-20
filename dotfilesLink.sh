@@ -31,6 +31,7 @@ echo "Installing packages"
 sudo apt install curl -y
 sudo apt install vim -y
 sudo apt install ack-grep -y
+sudo apt install gcc -y
 
 #OS type == Windows Subsystem for Linux(WSL)
 string="Microsoft"
