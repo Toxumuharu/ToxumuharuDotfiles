@@ -116,6 +116,8 @@ fi
 alias v='vim'
 alias cls='clear'
 alias rd='rm -r -f'
+alias l='ls'
+
 case "${OSTYPE}" in
 	darwin*)
 osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 580, 800}' -e 'end tell'
