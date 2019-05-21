@@ -32,7 +32,6 @@ sudo apt install curl -y
 sudo apt install vim -y
 sudo apt install ack-grep -y
 sudo apt install gcc -y
-sudo apt install unzip -y
 
 
 string="Debian"
