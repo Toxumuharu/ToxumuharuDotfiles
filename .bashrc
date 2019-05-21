@@ -141,6 +141,13 @@ alias keynote="open -a /Applications/Keynote.app"
 alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -la --color'
+
+string="Debian"
+if [ "$(cat /etc/issue | sed -n 's/.*\(Debian *\).*/\1/p')" = $string ]
+then
+google-drive-ocamlfuse ~/GoogleDrive
+fi
+
 string="Microsoft"
 if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
 then
