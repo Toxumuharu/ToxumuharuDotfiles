@@ -26,6 +26,7 @@ sudo add-apt-repository 'deb http://ftp.au.debian.org/debian/ stretch main non-f
 sudo apt update -y
 sudo apt install neofetch -y
 sudo apt install figlet -y
+sudp apt install make -y
 echo ""
 echo "Installing packages"
 sudo apt install curl -y
