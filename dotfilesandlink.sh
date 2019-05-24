@@ -81,3 +81,5 @@ echo ""
 
 figlet Welcome,
 figlet Toxumuharu
+cls
+
