@@ -79,7 +79,10 @@ echo "Linked dotfiles"
 echo "Finishing..."
 echo ""
 
+neofetch
+clear
+
 figlet Welcome,
 figlet Toxumuharu
-cls
+
 
