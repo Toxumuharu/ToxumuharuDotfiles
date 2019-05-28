@@ -117,6 +117,9 @@ alias v='vim'
 alias cls='clear'
 alias rd='rm -r -f'
 alias l='ls'
+alias indent='echo -e "G=gg\n:wq\n" | vim'
+#ex) echo -e "G=gg\n:wq\n" | vim ./myfile.c
+
 
 case "${OSTYPE}" in
 	darwin*)
