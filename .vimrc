@@ -18,13 +18,12 @@ inoremap [ []<Left>
 inoremap [] []<Left>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap < <><Left>
+inoremap <> <><Left>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 
 colo default
 syntax on
-
-
 
 
 
