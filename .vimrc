@@ -22,6 +22,18 @@ inoremap '' ''<LEFT>
 inoremap "" ""<LEFT>
 
 inoremap （） ()<Left>
+inoremap １ 1
+inoremap ２ 2
+inoremap ３ 3
+inoremap ４ 4
+inoremap ５ 5
+inoremap ６ 6
+inoremap ７ 7
+inoremap ８ 8
+inoremap ９ 9
+inoremap ０ 0
+
+
 
 colo default
 syntax on
