@@ -17,17 +17,18 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap [ []<Left>
 inoremap [] []<Left>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap < <><Left>
 inoremap <> <><Left>
 inoremap '' ''<LEFT>
 inoremap "" ""<LEFT>
 
+inoremap （） ()<Left>
 
 colo default
 syntax on
 
 
 
-
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap printf printf("");<Left><Left><Left>
 
 
