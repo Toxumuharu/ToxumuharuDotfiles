@@ -21,6 +21,12 @@ inoremap <> <><Left>
 inoremap '' ''<LEFT>
 inoremap "" ""<LEFT>
 
+colo default
+syntax on
+
+
+
+"For Japanese Setting
 inoremap （） ()<Left>
 inoremap １ 1
 inoremap ２ 2
@@ -32,15 +38,20 @@ inoremap ７ 7
 inoremap ８ 8
 inoremap ９ 9
 inoremap ０ 0
+inoremap ； ;
+inoremap ： :
+inoremap ． .
+inoremap ％ %
+inoremap ＆ &
+
+"Highlite ZENKAKU Space to whilte
+autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
+autocmd VimEnter * match FullWidthSpace /　/
+colorscheme desert 
 
 
 
-colo default
-syntax on
-
-
-
-inoremap [<Enter> []<Left><CR><ESC><S-o>
+"C
 inoremap printf printf("");<Left><Left><Left>
 
 
