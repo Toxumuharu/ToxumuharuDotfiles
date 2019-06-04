@@ -119,6 +119,7 @@ alias rd='rm -r -f'
 alias l='ls'
 alias indent='echo -e "G=gg\n:wq\n" | vim'
 #ex) echo -e "G=gg\n:wq\n" | vim ./myfile.c
+umask 022
 
 
 case "${OSTYPE}" in
@@ -144,6 +145,8 @@ alias keynote="open -a /Applications/Keynote.app"
 alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -la --color'
+alias ll='ls -alFG'
+
 
 string="Microsoft"
 if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
