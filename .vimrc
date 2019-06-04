@@ -43,6 +43,28 @@ inoremap ： :
 inoremap ． .
 inoremap ％ %
 inoremap ＆ &
+inoremap ＝ =
+inoremap ｂ b
+inoremap ｃ c
+inoremap ｄ d
+inoremap ｆ f
+inoremap ｇ g
+inoremap ｈ h
+inoremap ｊ j
+inoremap ｋ k
+inoremap ｌ l
+inoremap ｍ m
+inoremap ｎ n
+inoremap ｐ p
+inoremap ｑ q
+inoremap ｒ r
+inoremap ｓ s
+inoremap ｔ t
+inoremap ｖ v
+inoremap ｗ w
+inoremap ｘ x
+inoremap ｙ y
+inoremap ｚ z
 
 "Highlite ZENKAKU Space to whilte
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
