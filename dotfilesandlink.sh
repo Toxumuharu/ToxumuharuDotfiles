@@ -61,7 +61,7 @@ sudo apt install build-essential devscripts -y
 sudo apt install chromium -y 
 sudo apt-get install firmware-iwlwifi
 sudo apt install xdg-utils -y
-sudo apt install nautilus-dropbox -y
+#sudo apt install nautilus-dropbox -y
 sudo apt-get install firmware-iwlwifi -y
 sudo add-apt-repository ppa:alessandro-strada/ppa -y
 sudo apt install google-drive-ocamlfuse -y
