@@ -1,12 +1,12 @@
 set encoding=utf-8
 scriptencoding utf-8
-set mouse=a
-set nocompatible
+"set mouse=a
+"set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set number
 set cursorline
-set clipboard+=unnamed
+"set clipboard+=unnamed
 
 inoremap { {}<Left>
 inoremap {} {}<Left>
@@ -77,7 +77,6 @@ inoremap ／ /
 "Highlite ZENKAKU Space to whilte
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
-colorscheme desert 
 
 
 
