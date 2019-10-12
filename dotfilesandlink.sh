@@ -78,6 +78,7 @@ ln -sf ~/ToxumuharuDotfiles/.bashrc ~/.bashrc
 echo "Linked dotfiles"
 echo "Finishing..."
 echo ""
+source .bashrc
 
 neofetch
 
