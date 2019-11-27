@@ -53,6 +53,7 @@ if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
 then
 echo $'\e[31mWSL detected\e[0m'
 #echo "WSL detected"
+sudo apt install imagemagick -y
 else
 echo $'\e[31mLinux detected\e[0m'
 #echo "Linux detected"
@@ -62,9 +63,9 @@ sudo apt install chromium -y
 sudo apt-get install firmware-iwlwifi
 sudo apt install xdg-utils -y
 #sudo apt install nautilus-dropbox -y
-sudo apt-get install firmware-iwlwifi -y
+sudo apt install firmware-iwlwifi -y
 sudo add-apt-repository ppa:alessandro-strada/ppa -y
-sudo apt install google-drive-ocamlfuse -y
+#sudo apt install google-drive-ocamlfuse -y
 fi
 ;;
 esac
