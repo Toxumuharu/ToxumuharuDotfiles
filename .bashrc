@@ -152,9 +152,9 @@ string="Microsoft"
 if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
 then
 alias n=notepad++.exe
-alias vs=devenv.exe
+#alias vs=devenv.exe
 alias open=explorer.exe
-alias atom=atom.exe
+#alias atom=atom.exe
 #alias ls='ls -F --color=auto --show-control-chars -I "NTUSER.DAT*"'
 alias tm=texmaker.exe
 else
