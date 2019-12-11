@@ -6,6 +6,7 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set number
 set cursorline
+set scrolloff=15
 "set clipboard+=unnamed
 
 inoremap { {}<Left>
