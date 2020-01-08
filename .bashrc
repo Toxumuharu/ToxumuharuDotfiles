@@ -16,7 +16,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+HISTSIZE=20000
 HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
@@ -162,6 +162,7 @@ alias open=xdg-open
 fi
 		;;
 esac
+
 
 #whthout hostname
 PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[00m\]\$ '

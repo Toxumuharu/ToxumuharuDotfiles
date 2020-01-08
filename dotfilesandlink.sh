@@ -76,6 +76,8 @@ esac
 ln -sf ~/ToxumuharuDotfiles/.vimrc ~/.vimrc
 ln -sf ~/ToxumuharuDotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/ToxumuharuDotfiles/.bashrc ~/.bashrc
+ln -sf ~/ToxumuharuDotfiles/.inputrc ~/.inputrc
+
 echo "Linked dotfiles"
 echo "Finishing..."
 echo ""
