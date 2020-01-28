@@ -86,7 +86,7 @@ source .bashrc
 
 neofetch
 
-figlet Welcome,
-figlet Toxumuharu
+#figlet Welcome,
+#figlet Toxumuharu
 
 clear
