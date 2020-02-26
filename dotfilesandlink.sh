@@ -82,7 +82,8 @@ ln -sf ~/ToxumuharuDotfiles/.inputrc ~/.inputrc
 echo "Linked dotfiles"
 echo "Finishing..."
 echo ""
-source .bashrc
+. ~/.bashrc
+. ~/.inputrc
 
 neofetch
 
