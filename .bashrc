@@ -163,6 +163,8 @@ fi
 		;;
 esac
 
+. .bashrc
+. .inputrc
 
 #whthout hostname
 PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[00m\]\$ '

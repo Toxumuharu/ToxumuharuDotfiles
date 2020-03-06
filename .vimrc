@@ -74,6 +74,7 @@ inoremap －－ --
 inoremap － -
 inoremap ？ ?
 inoremap ／ /
+inoremap ----- --------------------------------------
 
 "Highlite ZENKAKU Space to whilte
 "autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
