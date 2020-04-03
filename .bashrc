@@ -124,7 +124,7 @@ umask 022
 
 case "${OSTYPE}" in
 	darwin*)
-#osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 580, 800}' -e 'end tell'
+osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 580, 800}' -e 'end tell'
 alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
@@ -139,7 +139,7 @@ alias facetime="open -a /Applications/FaceTime.app"
 alias numbers="open -a /Applications/Numbers.app"
 alias pages="open -a /Applications/Pages.app"
 alias keynote="open -a /Applications/Keynote.app"
-#/usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
+/usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
 		;;
 	linux*)
 alias ls='ls --color'
@@ -163,8 +163,8 @@ fi
 		;;
 esac
 
-. .bashrc
-. .inputrc
+#. .bashrc
+#. .inputrc
 
 #whthout hostname
 PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[00m\]\$ '
