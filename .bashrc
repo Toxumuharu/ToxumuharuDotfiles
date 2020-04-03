@@ -166,6 +166,10 @@ esac
 #. .bashrc
 #. .inputrc
 
+#git
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
 #whthout hostname
 PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[00m\]\$ '
 #with hostname
