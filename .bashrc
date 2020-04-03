@@ -170,7 +170,17 @@ esac
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
+#Temporary
+alias killvirtualbox="pgrep Virtual | xargs kill"
+alias killstoreassetd="pgrep storeassetd | xargs kill"
+alias cd0="cd ~/000_Data"
+alias cd4="cd ~/004_RICOH"
+alias cd5="cd ~/005_iOS"
+alias cd6="cd ~/006_ChattingEnglish"
+alias cd7="cd ~/007_ClientTeamTraining"
+export PATH=$PATH:/Users/tomoharu.kawata/Library/Android/sdk/platform-tools
+
 #whthout hostname
-PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[00m\]\$ '
+PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
 #with hostname
 #PS1='\[\e[32m\]Toxumuharu@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '

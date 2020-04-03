@@ -8,6 +8,12 @@ set number
 set cursorline
 set scrolloff=15
 "set clipboard+=unnamed
+set nowrapscan
+set list
+set listchars=tab:>-,extends:>,precedes:<
+set expandtab
+set tabstop=4 
+
 
 inoremap { {}<Left>
 inoremap {} {}<Left>
@@ -21,6 +27,8 @@ inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap <> <><Left>
 inoremap '' ''<LEFT>
 inoremap "" ""<LEFT>
+inoremap ----- ----------------------------------------
+
 
 colo default
 syntax on
@@ -75,6 +83,7 @@ inoremap － -
 inoremap ？ ?
 inoremap ／ /
 inoremap ----- --------------------------------------
+inoremap ーーーーー ----------------------------------------
 
 "Highlite ZENKAKU Space to whilte
 "autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
