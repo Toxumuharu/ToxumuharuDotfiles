@@ -140,6 +140,9 @@ alias numbers="open -a /Applications/Numbers.app"
 alias pages="open -a /Applications/Pages.app"
 alias keynote="open -a /Applications/Keynote.app"
 /usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
+#git
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
 		;;
 	linux*)
 alias ls='ls --color'
@@ -166,9 +169,6 @@ esac
 #. .bashrc
 #. .inputrc
 
-#git
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/git-completion.bash
 
 #Temporary
 alias killvirtualbox="pgrep Virtual | xargs kill"
