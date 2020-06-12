@@ -125,6 +125,7 @@ umask 022
 case "${OSTYPE}" in
 	darwin*)
 osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 580, 800}' -e 'end tell'
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
