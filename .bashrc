@@ -124,8 +124,9 @@ umask 022
 
 case "${OSTYPE}" in
 	darwin*)
-osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 580, 800}' -e 'end tell'
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 800, 1000}' -e 'end tell'
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
+#defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
@@ -182,6 +183,8 @@ alias cd7="cd ~/007_ClientTeamTraining"
 export PATH=$PATH:/Users/tomoharu.kawata/Library/Android/sdk/platform-tools
 
 #whthout hostname
-PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
+#PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
+#with git branch
+PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 #with hostname
 #PS1='\[\e[32m\]Toxumuharu@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
