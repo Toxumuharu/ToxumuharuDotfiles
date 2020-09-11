@@ -57,7 +57,7 @@ sudo apt install imagemagick -y
 else
 echo $'\e[31mLinux detected\e[0m'
 #echo "Linux detected"
-sudo apt upgrade -y
+#sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt install chromium -y 
 sudo apt-get install firmware-iwlwifi

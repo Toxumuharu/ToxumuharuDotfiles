@@ -185,6 +185,7 @@ export PATH=$PATH:/Users/tomoharu.kawata/Library/Android/sdk/platform-tools
 #whthout hostname
 #PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
 #with git branch
-PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+#PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 #with hostname
 #PS1='\[\e[32m\]Toxumuharu@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
