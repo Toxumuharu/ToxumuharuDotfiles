@@ -59,7 +59,6 @@ echo $'\e[31mLinux detected\e[0m'
 #echo "Linux detected"
 #sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
-sudo apt install chromium -y 
 sudo apt-get install firmware-iwlwifi
 sudo apt install xdg-utils -y
 #sudo apt install nautilus-dropbox -y
@@ -82,7 +81,6 @@ ln -sf ~/ToxumuharuDotfiles/.inputrc ~/.inputrc
 ln -sf ~/ToxumuharuDotfiles/.zshrc ~/.zshrc
 ln -sf ~/ToxumuharuDotfiles/.git-completion.bash
 ln -sf ~/ToxumuharuDotfiles/.git-prompt.sh ~/.git-prompt.sh
-. ~/.bashrc
 
 echo "Linked dotfiles"
 echo "Finishing..."
@@ -92,7 +90,7 @@ echo ""
 
 neofetch
 
-#figlet Welcome,
-#figlet Toxumuharu
+figlet Welcome,
+figlet Toxumuharu
 
 clear
