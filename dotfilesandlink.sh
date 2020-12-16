@@ -69,28 +69,5 @@ fi
 ;;
 esac
 
-#git
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
-curl -o ./.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+./link.sh
 
-#Link dotfiles
-ln -sf ~/ToxumuharuDotfiles/.vimrc ~/.vimrc
-ln -sf ~/ToxumuharuDotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/ToxumuharuDotfiles/.bashrc ~/.bashrc
-ln -sf ~/ToxumuharuDotfiles/.inputrc ~/.inputrc
-ln -sf ~/ToxumuharuDotfiles/.zshrc ~/.zshrc
-ln -sf ~/ToxumuharuDotfiles/.git-completion.bash
-ln -sf ~/ToxumuharuDotfiles/.git-prompt.sh ~/.git-prompt.sh
-
-echo "Linked dotfiles"
-echo "Finishing..."
-echo ""
-. ~/.bashrc
-. ~/.inputrc
-
-neofetch
-
-figlet Welcome,
-figlet Toxumuharu
-
-clear
