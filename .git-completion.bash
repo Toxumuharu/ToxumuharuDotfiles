@@ -1,1 +1,0 @@
-/home/toxumuharu/ToxumuharuDotfiles/.git-completion.bash
