@@ -143,10 +143,10 @@ alias pages="open -a /Applications/Pages.app"
 alias keynote="open -a /Applications/Keynote.app"
 /usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
 #git
-source .git-prompt.sh
-source .git-completion.bash
-source .git-completion.tcsh
-source .git-completion.zsh
+source ~/.git-prompt.sh
+source ~/.git-completion.bash
+source ~/.git-completion.tcsh
+source ~/.git-completion.zsh
 		;;
 	linux*)
 alias ls='ls --color'
