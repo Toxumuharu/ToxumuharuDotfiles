@@ -13,6 +13,7 @@ set list
 set listchars=tab:>-,extends:>,precedes:<
 set expandtab
 set tabstop=4 
+set shiftwidth=4
 
 
 inoremap { {}<Left>
