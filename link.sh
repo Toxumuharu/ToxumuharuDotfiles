@@ -1,10 +1,7 @@
 #!/bin/bash
 
-#git
-ln -sf ~/ToxumuharuDotfiles/completion/.git-prompt.sh ~/.git-prompt.sh
-ln -sf ~/ToxumuharuDotfiles/completion/.git-completion.bash ~/.git-completion.bash
-ln -sf ~/ToxumuharuDotfiles/completion/.git-completion.bash ~/.git-completion.tcsh
-ln -sf ~/ToxumuharuDotfiles/completion/.git-completion.bash ~/.git-completion.zsh
+#git-completion
+ln -sf ~/ToxumuharuDotfiles/.git-completion ~
 
 #Link dotfiles
 ln -sf ~/ToxumuharuDotfiles/.vimrc ~/.vimrc
@@ -17,4 +14,3 @@ ln -sf ~/ToxumuharuDotfiles/.zshrc ~/.zshrc
 . ~/.inputrc
 
 clear
-
