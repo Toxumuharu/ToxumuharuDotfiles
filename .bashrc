@@ -124,7 +124,7 @@ umask 022
 
 case "${OSTYPE}" in
 	darwin*)
-osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 800, 1000}' -e 'end tell'
+osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 700, 2000}' -e 'end tell'
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 #defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 alias ls="ls -G"
@@ -147,6 +147,8 @@ source ~/.git-prompt.sh
 source ~/.git-completion.bash
 source ~/.git-completion.tcsh
 source ~/.git-completion.zsh
+#Android
+export PATH="~/Library/Android/sdk/platform-tools":$PATH
 		;;
 	linux*)
 alias ls='ls --color'
@@ -174,8 +176,6 @@ esac
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM="auto"
-
-export PATH=$PATH:/Users/tomoharu.kawata/Library/Android/sdk/platform-tools
 
 #whthout hostname
 #PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
