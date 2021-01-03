@@ -22,3 +22,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+#Rust #Cargo
+source "$HOME/.cargo/env"

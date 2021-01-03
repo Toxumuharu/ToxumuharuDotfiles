@@ -177,6 +177,9 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM="auto"
 
+#Rust #Cargo
+source "$HOME/.cargo/env"
+
 #whthout hostname
 #PS1='\[\e[32m\]Tomoharu.Kawata:\[\033[01;34m\]\W\[\033[00m\]\$ '
 #with git branch
