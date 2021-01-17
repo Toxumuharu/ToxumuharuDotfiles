@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #git-completion
-ln -sf ~/ToxumuharuDotfiles/.git-completion ~
+ln -sf ~/ToxumuharuDotfiles/completion/.git-prompt.sh ~
+ln -sf ~/ToxumuharuDotfiles/completion/.git-completion.bash ~
 
 #Link dotfiles
 ln -sf ~/ToxumuharuDotfiles/.vimrc ~/.vimrc
