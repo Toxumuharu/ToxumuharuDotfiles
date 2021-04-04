@@ -29,6 +29,8 @@ inoremap <> <><Left>
 inoremap '' ''<LEFT>
 inoremap "" ""<LEFT>
 inoremap ----- ----------------------------------------
+inoremap kyou <C-R>=strftime("%m/%d/%Y")<CR>
+
 
 
 colo default
