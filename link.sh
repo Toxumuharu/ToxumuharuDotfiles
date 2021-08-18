@@ -14,4 +14,4 @@ ln -sf ~/ToxumuharuDotfiles/.zshrc ~/.zshrc
 . ~/.bashrc
 . ~/.inputrc
 
-clear
+#clear

@@ -180,7 +180,7 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM="auto"
 
 #Rust #Cargo
-source "$HOME/.cargo/env"
+#source "$HOME/.cargo/env"
 
 #whthout hostname
 PS1='\[\e[32m\]Toxumuharu:\[\033[01;34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '

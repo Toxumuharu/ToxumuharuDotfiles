@@ -24,5 +24,5 @@ unset __conda_setup
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 #Rust #Cargo
-source "$HOME/.cargo/env"
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+#source "$HOME/.cargo/env"
+#eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
