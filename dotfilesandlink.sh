@@ -11,7 +11,6 @@ brew install vim
 brew install git
 brew install neofetch
 brew install figlet
-brew install ack
 
 export PATH="/usr/local/bin:$PATH"
 ;;
