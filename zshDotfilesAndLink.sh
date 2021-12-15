@@ -1,0 +1,58 @@
+# macOS
+case "${OSTYPE}" in
+darwin*)
+echo $'\e[31mmacOS detected\e[0m'
+#brew install vim
+#brew install git
+#brew install neofetch
+#brew install figlet
+
+export PATH="/usr/local/bin:$PATH"
+;;
+
+
+
+# Linux 
+linux*)
+echo "updating package"
+killall update-manager
+#sudo add-apt-repository ppa:dawidd0811/neofetch -y
+sudo add-apt-repository 'deb http://ftp.au.debian.org/debian/ stretch main non-free'
+sudo apt update -y
+echo "Installing packages"
+#sudo apt install neofetch -y
+#sudo apt install figlet -y
+sudp apt install make -y
+sudo apt install curl -y
+sudo apt install vim -y
+sudo apt install ack-grep -y
+sudo apt install gcc -y
+
+
+string="Debian"
+if test $(cat /etc/issue | sed -n 's/.*\(Debian *\).*/\1/p') = $string
+then
+sudo apt install software-properties-common dirmngr gnupg-agent
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AD5F235DF639B041
+echo 'deb http://ppa.launchpad.net/alessandro-strada/ppa/ubuntu xenial main' | sudo tee /etc/apt/sources.list.d/alessandro-strada-ubuntu-ppa.list >/dev/null
+sudo apt update
+fi
+
+#OS type == Windows Subsystem for Linux(WSL)
+string="Microsoft"
+#detect WSL or native Linux
+if test $(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p') = $string
+then
+echo $'\e[31mWSL detected\e[0m'
+else
+echo $'\e[31mLinux detected\e[0m'
+#sudo apt install build-essential devscripts -y
+#sudo apt install firmware-iwlwifi -y
+sudo add-apt-repository ppa:alessandro-strada/ppa -y
+sudo apt install xdg-utils -y
+fi
+;;
+esac
+
+./zshLink.sh
+

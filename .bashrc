@@ -144,10 +144,9 @@ alias keynote="open -a /Applications/Keynote.app"
 /usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
 
 #git
-source ~/.git-prompt.sh
-source ~/.git-completion.bash
-#source ~/.git-completion.tcsh
-#source ~/.git-completion.zsh
+source ~/.dotfiles/git-prompt.sh
+source ~/.dotfiles/git-completion.bash
+
 
 #Android
 export PATH="~/Library/Android/sdk/platform-tools":$PATH
@@ -162,12 +161,12 @@ alias ll='ls -alFG'
 string="Microsoft"
 if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
 then
-alias n=notepad++.exe
+#alias n=notepad++.exe
 #alias vs=devenv.exe
 alias open=explorer.exe
 #alias atom=atom.exe
 #alias ls='ls -F --color=auto --show-control-chars -I "NTUSER.DAT*"'
-alias tm=texmaker.exe
+#alias tm=texmaker.exe
 else
 alias open=xdg-open
 fi
