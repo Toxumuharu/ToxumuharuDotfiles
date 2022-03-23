@@ -127,21 +127,16 @@ case "${OSTYPE}" in
 osascript -e 'tell application "Terminal"' -e 'set bounds of front window to {1, 1, 700, 3000}' -e 'end tell'
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 #defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
 alias ls="ls -G"
-alias ll="ls -lG"
-alias la="ls -laG"
-alias mi="open -a /Applications/mi.app"
 alias chrome="open -a /Applications/Google Chrome.app"
 alias safari="open -a /Applications/Safari.app"
 alias xcode="open -a /Applications/Xcode.app"
-alias firefox="open -a /Applications/Firefox.app"
-alias itunes="open -a /Applications/iTunes.app"
 alias mail="open -a /Applications/mail.app"
-alias facetime="open -a /Applications/FaceTime.app"
 alias numbers="open -a /Applications/Numbers.app"
 alias pages="open -a /Applications/Pages.app"
 alias keynote="open -a /Applications/Keynote.app"
-/usr/bin/osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
+
 
 #git
 source ~/.dotfiles/git-prompt.sh
@@ -153,10 +148,6 @@ export PATH="~/Library/Android/sdk/platform-tools":$PATH
 		;;
 	linux*)
 alias ls='ls --color'
-alias ll='ls -l --color'
-alias la='ls -la --color'
-alias ll='ls -alFG'
-
 
 string="Microsoft"
 if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
