@@ -68,5 +68,5 @@ fi
 ;;
 esac
 
-./link.sh
+./bashLink.sh
 
