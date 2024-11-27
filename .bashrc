@@ -114,13 +114,7 @@ fi
 #Toxumuharu
 
 alias v='vim'
-alias cls='clear'
-alias rd='rm -r -f'
-alias l='ls'
-alias indent='echo -e "G=gg\n:wq\n" | vim'
-#ex) echo -e "G=gg\n:wq\n" | vim ./myfile.c
 umask 022
-
 
 case "${OSTYPE}" in
     darwin*)
@@ -129,13 +123,6 @@ case "${OSTYPE}" in
         #defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
         osascript -e "tell application \"Terminal\" to set current settings of first window to settings set \"Pro\""
         alias ls="ls -G"
-        alias chrome="open -a /Applications/Google Chrome.app"
-        alias safari="open -a /Applications/Safari.app"
-        alias xcode="open -a /Applications/Xcode.app"
-        alias mail="open -a /Applications/mail.app"
-        alias numbers="open -a /Applications/Numbers.app"
-        alias pages="open -a /Applications/Pages.app"
-        alias keynote="open -a /Applications/Keynote.app"
 
 
 #git
@@ -153,12 +140,7 @@ linux*)
     string="Microsoft"
     if [ "$(uname -r | sed -n 's/.*\(Microsoft *\).*/\1/p')" = $string ]
     then
-        #alias n=notepad++.exe
-        #alias vs=devenv.exe
         alias open=explorer.exe
-        #alias atom=atom.exe
-        #alias ls='ls -F --color=auto --show-control-chars -I "NTUSER.DAT*"'
-        #alias tm=texmaker.exe
     else
         alias open=xdg-open
     fi

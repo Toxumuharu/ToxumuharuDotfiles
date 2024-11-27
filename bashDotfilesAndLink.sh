@@ -20,18 +20,13 @@ export PATH="/usr/local/bin:$PATH"
 #OS type == Linux(not obvious, Just Linux)
 linux*)
 killall update-manager
-sudo add-apt-repository ppa:dawidd0811/neofetch -y
-sudo add-apt-repository 'deb http://ftp.au.debian.org/debian/ stretch main non-free'
 sudo apt update -y
-sudo apt install neofetch -y
-sudo apt install figlet -y
-sudp apt install make -y
 echo ""
 echo "Installing packages"
+sudo apt install neofetch -y
+sudo apt install figlet -y
 sudo apt install curl -y
 sudo apt install vim -y
-sudo apt install ack-grep -y
-sudo apt install gcc -y
 
 
 string="Debian"
